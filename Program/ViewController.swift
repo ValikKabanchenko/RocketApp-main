@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func Push(_ sender: Any) {
      
        
-    if dataArray != []{
+    if dataArray != [] {
         labelHeader.text = "🤑 Flew to spend money 🤑"
     }
     if textField.text! != "" {
@@ -43,7 +43,9 @@ class ViewController: UIViewController {
         labelList.text = "No spending 😶‍🌫️"
     
     }else if dataArray == [0]{
+        
         labelList.text = "Can spend a little more 🤏"
+        
     }else if dataArray != []{
         
         labelList.text = list
@@ -51,13 +53,10 @@ class ViewController: UIViewController {
         }
       labelTotal.text = "Total summ 👜: \(summ) " + "💲"
 }
-   
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
       
         printData()
     }
-
-
 }
 
