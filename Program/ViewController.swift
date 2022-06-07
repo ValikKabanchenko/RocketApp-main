@@ -23,20 +23,13 @@ class ViewController: UIViewController {
     if dataArray != []{
         labelHeader.text = "🤑 Flew to spend money 🤑"
     }
-    
-       
-        
-        
     if textField.text! != "" {
             let d = Double(textField.text!)
             dataArray.append(d!)
     }
         textField.text! = ""
         printData()
-    }
-    
-   
-    
+}
     func printData(){
         var list = ""
         var summ : Double = 0
@@ -56,15 +49,9 @@ class ViewController: UIViewController {
         labelList.text = list
         
         }
-      
-       
-        labelTotal.text = "Total summ 👜: \(summ) " + "💲"
-        
-    
-        }
-
-  
-    
+      labelTotal.text = "Total summ 👜: \(summ) " + "💲"
+}
+   
     override func viewDidLoad() {
         super.viewDidLoad()
       
